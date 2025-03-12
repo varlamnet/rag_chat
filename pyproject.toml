@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "rag_chat"
+version = "0.1.0"
+description = "AI Chatbot with retrieval-augmented generation (RAG) functionality."
+authors = ["varlamnet"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+boto3 = "^1.37.6"
+langchain-aws = "^0.2.15"
+langchain-chroma = "^0.2.2"
+gradio = "^5.20.0"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^25.1.0"
+ipykernel = "^6.29.5"
+langchain-community = "^0.3.19"
+pypdf = "^5.3.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
