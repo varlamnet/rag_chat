@@ -11,14 +11,14 @@ python = "^3.12"
 boto3 = "^1.37.6"
 langchain-aws = "^1.4.3"
 langchain-chroma = "^0.2.2"
-gradio = "^5.20.0"
+gradio = "^6.11.0"
 
 
 [tool.poetry.group.dev.dependencies]
 black = "^25.1.0"
 ipykernel = "^6.29.5"
 langchain-community = "^0.3.19"
-pypdf = "^5.3.1"
+pypdf = "^6.9.2"
 
 [build-system]
 requires = ["poetry-core"]
