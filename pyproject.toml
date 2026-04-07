@@ -18,7 +18,7 @@ gradio = "^5.20.0"
 black = "^25.1.0"
 ipykernel = "^6.29.5"
 langchain-community = "^0.3.19"
-pypdf = "^5.3.1"
+pypdf = "^6.9.2"
 
 [build-system]
 requires = ["poetry-core"]
