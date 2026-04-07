@@ -1,0 +1,6 @@
+version: 2
+updates:
+  - package-ecosystem: "pip" # Poetry uses the pip ecosystem
+    directory: "/"
+    schedule:
+      interval: "weekly"
