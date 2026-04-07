@@ -9,7 +9,7 @@ readme = "README.md"
 [tool.poetry.dependencies]
 python = "^3.12"
 boto3 = "^1.37.6"
-langchain-aws = "^0.2.15"
+langchain-aws = "^1.4.3"
 langchain-chroma = "^0.2.2"
 gradio = "^6.11.0"
 
