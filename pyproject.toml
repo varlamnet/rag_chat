@@ -16,7 +16,7 @@ gradio = "^6.11.0"
 
 [tool.poetry.group.dev.dependencies]
 black = "^26.3.1"
-ipykernel = "^6.29.5"
+ipykernel = "^7.2.0"
 langchain-community = "^0.3.31"
 pypdf = "^6.9.2"
 
