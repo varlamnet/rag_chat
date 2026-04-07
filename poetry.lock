@@ -1322,13 +1322,14 @@ grpc = ["grpcio (>=1.44.0,<2.0.0)"]
 
 [[package]]
 name = "gradio"
-version = "5.50.0"
+version = "6.11.0"
 description = "Python library for easily interacting with trained machine learning models"
 optional = false
 python-versions = ">=3.10"
 groups = ["main"]
 files = [
-    {file = "gradio-5.50.0-py3-none-any.whl", hash = "sha256:d06770d57cdda9b703ef9cf767ac93a890a0e12d82679a310eef74203a3673f4"},
+    {file = "gradio-6.11.0-py3-none-any.whl", hash = "sha256:9b72461cf55c9b1bee8818c9a7ceeac78af1dedb5e8c4d3d48b5a0c6c66db7b8"},
+    {file = "gradio-6.11.0.tar.gz", hash = "sha256:da706246fae711007e752ae85acdb0300d68e60eb4bcea29d43371d28432b787"},
 ]
 
 [package.dependencies]
@@ -1338,8 +1339,9 @@ audioop-lts = {version = "<1.0", markers = "python_version >= \"3.13\""}
 brotli = ">=1.1.0"
 fastapi = ">=0.115.2,<1.0"
 ffmpy = "*"
-gradio-client = "1.14.0"
+gradio-client = "2.4.0"
 groovy = ">=0.1,<1.0"
+hf-gradio = ">=0.3.0,<1.0"
 httpx = ">=0.24.1,<1.0"
 huggingface-hub = ">=0.33.5,<2.0"
 jinja2 = "<4.0"
@@ -1347,34 +1349,35 @@ markupsafe = ">=2.0,<4.0"
 numpy = ">=1.0,<3.0"
 orjson = ">=3.0,<4.0"
 packaging = "*"
-pandas = ">=1.0,<3.0"
-pillow = ">=8.0,<12.0"
-pydantic = ">=2.0,<=2.12.3"
+pandas = ">=1.0,<4.0"
+pillow = ">=8.0,<13.0"
+pydantic = ">=2.0,<=3.0"
 pydub = "*"
 python-multipart = ">=0.0.18"
+pytz = ">=2017.2"
 pyyaml = ">=5.0,<7.0"
-ruff = ">=0.9.3"
-safehttpx = ">=0.1.6,<0.2.0"
+safehttpx = ">=0.1.7,<0.2.0"
 semantic-version = ">=2.0,<3.0"
-starlette = ">=0.40.0,<1.0"
+starlette = ">=0.40.0,<2.0"
 tomlkit = ">=0.12.0,<0.14.0"
 typer = ">=0.12,<1.0"
 typing-extensions = ">=4.0,<5.0"
 uvicorn = ">=0.14.0"
 
 [package.extras]
-mcp = ["mcp (==1.10.1)", "pydantic (>=2.11)"]
+mcp = ["mcp (>=1.21.0,<2.0.0)", "pydantic (>=2.11.10,<=2.12.5)"]
 oauth = ["authlib", "itsdangerous"]
 
 [[package]]
 name = "gradio-client"
-version = "1.14.0"
+version = "2.4.0"
 description = "Python library for easily interacting with trained machine learning models"
 optional = false
 python-versions = ">=3.10"
 groups = ["main"]
 files = [
-    {file = "gradio_client-1.14.0-py3-none-any.whl", hash = "sha256:9a2f5151978411e0f8b55a2d38cddd0a94491851149d14db4af96f5a09774825"},
+    {file = "gradio_client-2.4.0-py3-none-any.whl", hash = "sha256:7c170807b924ed6056b2a1fa9d659d349dd20567c00ee0b4dc249dc1e2def620"},
+    {file = "gradio_client-2.4.0.tar.gz", hash = "sha256:781885374f86759b8db5195e13e716c301d14e48e0442aef63362f1eeea4cce2"},
 ]
 
 [package.dependencies]
@@ -1383,7 +1386,6 @@ httpx = ">=0.24.1"
 huggingface-hub = ">=0.19.3,<2.0"
 packaging = "*"
 typing-extensions = ">=4.0,<5.0"
-websockets = ">=13.0,<16.0"
 
 [[package]]
 name = "greenlet"
@@ -1556,6 +1558,25 @@ files = [
     {file = "h11-0.16.0-py3-none-any.whl", hash = "sha256:63cf8bbe7522de3bf65932fda1d9c2772064ffb3dae62d55932da54b31cb6c86"},
     {file = "h11-0.16.0.tar.gz", hash = "sha256:4e35b956cf45792e4caa5885e69fba00bdbc6ffafbfa020300e549b208ee5ff1"},
 ]
+
+[[package]]
+name = "hf-gradio"
+version = "0.3.0"
+description = "An extension of the Hugging Face CLI for interacting with Gradio Spaces and Apps."
+optional = false
+python-versions = ">=3.10"
+groups = ["main"]
+files = [
+    {file = "hf_gradio-0.3.0-py3-none-any.whl", hash = "sha256:159d33d1f0affae8164d29c0c51a63dfcc0bbc90803b07c6f139137206a796ae"},
+    {file = "hf_gradio-0.3.0.tar.gz", hash = "sha256:e74a0f9eab14a1d6f54c523c2192aa5283ca51f01605f661b2542387da5b9fc0"},
+]
+
+[package.dependencies]
+gradio-client = ">=2.0,<3.0"
+typer = "*"
+
+[package.extras]
+dev = ["ruff", "ty"]
 
 [[package]]
 name = "hf-xet"
