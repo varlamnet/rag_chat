@@ -11,7 +11,7 @@ python = "^3.12"
 boto3 = "^1.37.6"
 langchain-aws = "^0.2.15"
 langchain-chroma = "^0.2.2"
-gradio = "^5.20.0"
+gradio = "^6.11.0"
 
 
 [tool.poetry.group.dev.dependencies]
