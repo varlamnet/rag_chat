@@ -10,7 +10,7 @@ readme = "README.md"
 python = "^3.12"
 boto3 = "^1.42.87"
 langchain-aws = "^1.4.3"
-langchain-chroma = "^0.2.2"
+langchain-chroma = "^1.1.0"
 gradio = "^6.11.0"
 
 
