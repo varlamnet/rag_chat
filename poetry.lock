@@ -2095,14 +2095,14 @@ google-auth = ["google-auth (>=1.0.1)"]
 
 [[package]]
 name = "langchain-aws"
-version = "1.4.3"
+version = "1.4.5"
 description = "An integration package connecting AWS and LangChain"
 optional = false
 python-versions = ">=3.10"
 groups = ["main"]
 files = [
-    {file = "langchain_aws-1.4.3-py3-none-any.whl", hash = "sha256:74e0a2b341da2214bbf6fd25a91da48223f815078d22beb9aa88797666879843"},
-    {file = "langchain_aws-1.4.3.tar.gz", hash = "sha256:a4eea654bd266bb4084553dc2df25fd5d7f68ad388f0111719685126bd16f3bd"},
+    {file = "langchain_aws-1.4.5-py3-none-any.whl", hash = "sha256:7571cf0f277b6221ec4ece05afe4ac0281c1dd0e0c9042d8f50260ef024051ec"},
+    {file = "langchain_aws-1.4.5.tar.gz", hash = "sha256:9cd1b3940ed6b7c630c091c48d16d158f097b4b3a52d8a28e815832c28a0e977"},
 ]
 
 [package.dependencies]
